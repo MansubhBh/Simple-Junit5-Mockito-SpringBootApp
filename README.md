@@ -1,4 +1,5 @@
-###### **Simple Junit Mockito app**
+
+### **Simple Junit Mockito app**
 
 Step 1)
 Download Code coverage metrics tool - Sonarqube 
