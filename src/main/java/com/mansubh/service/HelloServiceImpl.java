@@ -27,4 +27,13 @@ public class HelloServiceImpl implements HelloService {
         }
         return statename.substring(0,3).toUpperCase();
     }
+
+    @Override
+    public int sum(int[] numbers) {
+        int sum =0;
+        for (int i : numbers){
+            sum += i;
+        }
+        return sum;
+    }
 }

@@ -1,5 +1,6 @@
 package com.mansubh.service;
 
+import com.sun.org.apache.xml.internal.security.utils.HelperNodeList;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -28,5 +29,10 @@ public class HelloServiceTest {
         String expected2 = "QUE";
         Assertions.assertEquals(expected, helloService.getStateInitials(params));
         Assertions.assertEquals(expected2, helloService.getStateInitials(params2));
+    }
+
+    @Test
+    public void testSum(){
+        Assertions.assertEquals(6,helloService.sum(new int[]{1,2,3}));
     }
 }

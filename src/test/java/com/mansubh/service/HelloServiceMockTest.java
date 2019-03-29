@@ -34,9 +34,11 @@ public class HelloServiceMockTest {
     @DisplayName("Test mock service get state initials method")
     @Test
     public void testGetStateInitials(){
-        String param = "Australia Capital Territory";
+        String param = "Australia Capital Territor  y";
         String expected = "ACT";
         Assertions.assertEquals(expected, helloService.getStateInitials(param));
     }
+
+
 
 }
